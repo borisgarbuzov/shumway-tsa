@@ -30,3 +30,4 @@ CentralLimitTheorem <- function(n, r, min, max)
 }
 
 CentralLimitTheorem(n = 20000, r = 1000, min = -10, max = 10)
+

@@ -3,7 +3,7 @@
 # Set parameters
 trueMean = 5
 trueSd = 6
-sampleSize = 5000
+sampleSize = 50
 
 # Generate
 mySample = rnorm(n = sampleSize, mean = trueMean, sd = trueSd)

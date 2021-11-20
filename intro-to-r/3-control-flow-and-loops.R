@@ -12,9 +12,9 @@ if (category == 'A'){
 }
 
 #================ for loops =================
-for (i in 1:10) {
+for (i in 1:10) 
   cat(i, "\n")
-}
+
 
 for (i in 1:10) {
   if (i %% 2 == 0) {
@@ -35,3 +35,5 @@ while (i <= 10) {
   cat(i, "\n")
   i = i + 1
 }
+
+

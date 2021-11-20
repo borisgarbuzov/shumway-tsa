@@ -4,6 +4,7 @@ rm(list = ls())
 a <- c(1, 2, 5, 3, 6, -2, 4)
 a
 
+
 class(a)
 typeof(a)
 is.vector(a)
@@ -45,6 +46,7 @@ t[1]
 t[0]
 t[-1]
 
+t[1:2]
 
 # accessing vector elements using logical indexing.
 v <- t[c(TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE)]
@@ -57,6 +59,11 @@ x
 #================ matrices =================
 y <- matrix(data = 1:15, nrow=5, ncol=3)
 y
+
+y <- matrix(data = 1:15, nrow=3, ncol=5)
+y
+
+
 
 cells <- c(1, 26, 24, 68)
 rnames <- c("R1", "R2")
@@ -222,3 +229,4 @@ list_data
 # Update the 4th Element.
 list_data[4] <- FALSE
 list_data[4]
+

@@ -14,16 +14,16 @@ H <- c(7,12,28,3,41)
 M <- c("Mar","Apr","May","Jun","Jul")
 
 # Plot the bar chart
-barplot(H,names.arg=M,xlab="Month",ylab="Revenue",col="blue",
-        main="Revenue chart",border="red")
+barplot(H, names.arg=M, xlab="Month", ylab="Revenue", col="blue",
+        main="Revenue chart", border="red")
 
 # ==================== boxplots ===========================
-input <- mtcars[,c('mpg','cyl')]
+input <- mtcars[, c('mpg', 'cyl')]
 
 # Plot the chart.
 boxplot(mpg ~ cyl, data = mtcars, xlab = "Number of Cylinders",
         ylab = "Miles Per Gallon", main = "Mileage Data")
-# stopped here
+
 # ==================== histograms ===========================
 # Create data for the graph.
 v <-  c(9,13,21,8,36,22,12,41,31,33,19)
@@ -47,6 +47,7 @@ plot(x = input$wt, y = input$mpg,
 y = c(1, 4, 3)
 x = c(10, 20, 30)
 plot(formula = y ~ x)
+plot(x, y) # same
 
 # ==================== line graphs ===========================
 # Create the data for the chart.
@@ -60,3 +61,9 @@ plot(v, type = "o",  col = "red",  xlab = "Month",  ylab = "Rain fall",
 # type="o" means overplotted
 secondData = c(10, 2, 30)
 lines(secondData)
+
+
+plot( v, type="l", col="red" )
+par(new=TRUE)
+plot( secondData, type="l", col="green" )
+
