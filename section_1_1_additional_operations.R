@@ -228,3 +228,4 @@ lines(vConstructed, col='red')
 
 myDif = v - vConstructed
 myDif
+

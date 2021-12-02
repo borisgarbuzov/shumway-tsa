@@ -49,3 +49,4 @@ mtext("Time (1 pt = 2 sec)", side=1, line=2)
 par(mfrow=c(2,1))
 tsplot(EQ5, main="Earthquake")
 tsplot(EXP6, main="Explosion")
+

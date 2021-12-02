@@ -11,8 +11,13 @@ if (suppressWarnings(!require("astsa"))) {
 set.seed(2)
 x = rnorm(100)
 y = lag(x, -5) + rnorm(100)
-par(mfrow=c(1,1))
+par(mfrow=c(2,1))
 ccf(y, x, ylab='CCovF', type='covariance')
 abline(v=0, lty=2)
 text(11, .9, 'x leads')
 text(-9, .9, 'y leads')
+# swap x and y
+ccf(x, y, ylab='CCovF', type='covariance')
+abline(v=0, lty=2)
+
+

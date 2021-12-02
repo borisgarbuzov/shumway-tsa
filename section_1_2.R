@@ -7,7 +7,11 @@ if (suppressWarnings(!require("astsa"))) {
 
 # Section 1.2 Time Series Statistical Models
 
-# Example 1.9
+# Example 1.8 White Noise
+w = rnorm(500,0,1)
+plot(w)
+
+# Example 1.9. MA
 w = rnorm(500,0,1)  # 500 N(0,1) variates
 v = filter(w, sides=2, rep(1/3,3))  # moving average
 par(mfrow=c(2,1))
